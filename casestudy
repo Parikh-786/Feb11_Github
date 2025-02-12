@@ -1,0 +1,38 @@
+ mkdir casestudy
+  126  ls
+  127  cd casestudy/
+  128  git init
+  129  touch masterfile.txt
+  130  git add .
+  131  git commit -m "This is masterfile commit"
+  132  git branch tester && git branch feature1 && git branch feature2 
+  133  git branch
+  134  git checkout feature1
+  135  touch newf1.txt
+  136  git add .
+  137  git commit -m "newf1.txt file"
+  138  ls
+  139  git status
+  140  git checkout feature2
+  141  touch newf2.txt
+  142  git add .
+  143  git commit -m "newf2.txt"
+  144  ls
+  145  git branch
+  146  git checkout tester
+  147  git merge feature1 && git merge feature2
+  148  ls
+  149  git branch hotfix
+  150  git branch
+  151  git checkout hotfix
+  152  ls
+  153  sudo nano requiremts.txt
+  154  git add .
+  155  git commit -m "requirements.txt file"
+  156  ls
+  157  git branch
+  158  git checkout master
+  159  git merge hotfix
+  160  ls
+  161  cat requiremts.txt 
+  162  history
